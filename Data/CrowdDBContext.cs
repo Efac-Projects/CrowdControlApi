@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CrowdControl.Data
 {
-    public class CrowdDBContext : DbContext
+    public class CrowdDBContext : IdenityDbContext
     {
         public CrowdDBContext(DbContextOptions<CrowdDBContext> options) : base(options)
         {
