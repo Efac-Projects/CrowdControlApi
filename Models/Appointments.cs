@@ -13,10 +13,10 @@ namespace CrowdControl.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public double Price { get; set; }
-	public double Total { get; set; }
+	    public double Total { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public boolean Approved { get; set; }
+        public Boolean Approved { get; set; }
         
     }
 }
