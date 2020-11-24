@@ -34,7 +34,7 @@ namespace CrowdControl
             var builder = services.AddIdentityCore<AppUser>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
             identityBuilder.AddEntityFrameworkStores<CrowdDBContext>();
-            identityBuilder.AddSignInManager<SignInManager<User>>();
+            identityBuilder.AddSignInManager<SignInManager<AppUser>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
